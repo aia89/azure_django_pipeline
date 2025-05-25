@@ -1,0 +1,15 @@
+datadog:
+  apiKey: "<_API_KEY>"
+  appKey: "<DATADOG_APP_KEY>"
+  clusterName: "django-aks-cluster"
+  kubeStateMetricsEnabled: true
+  kubeStateMetricsNetworkPolicy:
+    create: true
+  processAgent:
+    enabled: true
+    processCollection: true
+  logs:
+    enabled: true
+    containerCollectAll: true
+  apm:
+    enabled: true
