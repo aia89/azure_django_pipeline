@@ -18,3 +18,12 @@ This project deploys a Django application to Azure Kubernetes Service with DataD
 - kubectl
 - Helm
 - Docker
+
+
+##Helm
+###Install DataDog using Helm
+First, add the DataDog Helm repo:
+
+bash
+helm repo add datadog https://helm.datadoghq.com
+helm repo update
