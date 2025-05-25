@@ -1,3 +1,4 @@
+cat <<EOT > django-app/Dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
@@ -17,3 +18,4 @@ COPY . /code/
 
 # Run the application
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", "myproject.wsgi"]
+EOT
