@@ -1,3 +1,5 @@
+In progress...
+
 # Django on AKS with DataDog Monitoring
 
 ## Project Structure
