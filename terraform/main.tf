@@ -1,4 +1,3 @@
-cat <<EOT > terraform/main.tf
 provider "azurerm" {
   features {}
 }
@@ -39,4 +38,3 @@ resource "azurerm_role_assignment" "aks_acr" {
   scope                            = azurerm_container_registry.acr.id
   skip_service_principal_aad_check = true
 }
-EOT
