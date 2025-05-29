@@ -21,6 +21,9 @@ This project deploys a Django application to Azure Kubernetes Service with DataD
 - Helm
 - Docker
 
+requirements:
+echo "Django==3.2
+gunicorn==20.1.0" > django-app/requirements.txt
 
  ##Helm
  
@@ -45,5 +48,6 @@ Visit the IP in your browser to see the Django app running.
 
 
 I can also add Github actions workflow... 
+
 
 
