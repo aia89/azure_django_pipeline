@@ -1,3 +1,5 @@
+In progress...
+
 # Django on AKS with DataDog Monitoring
 
 ## Project Structure
@@ -20,11 +22,28 @@ This project deploys a Django application to Azure Kubernetes Service with DataD
 - Docker
 
 
-##Helm
-###Install DataDog using Helm
+ ##Helm
+ 
+ ###Install DataDog using Helm
 First, add the DataDog Helm repo:
 
-bash
 helm repo add datadog https://helm.datadoghq.com
 helm repo update
+
+
+helm install datadog -f datadog-values.yaml datadog/datadog
+
+ #Deploy the Django Application
+kubectl apply -f deployment.yaml
+
+
+ #Access the Application
+Get the external IP:
+kubectl get service django-service
+
+Visit the IP in your browser to see the Django app running.
+
+
+I can also add Github actions workflow... 
+
 
